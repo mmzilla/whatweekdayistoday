@@ -76,8 +76,6 @@ function weekDay2($day, $month, $year)
         $dayInMonth += $monthAmount[$x];
     }
 
-    //$dayInMonth = ($monthNumber[$month] - 1) * 30;
-    //echo "$leapYear $countYear ($day + $dayInMonth + $dayInYear)".($day + $dayInMonth + $dayInYear) ."--".($day + $dayInMonth + $dayInYear) % 7;
     $sumDate = ($day + $dayInMonth + $dayInYear) % 7;
 
     return $dayOfWeek[$sumDate];
